@@ -8,10 +8,10 @@ SDK oficial da FluvPay para Ruby. Cobre cobranças PIX, saques, transferências 
 
 ## Instalação
 
-A publicação no RubyGems está pendente. Por enquanto, instale a partir do repositório, fixando a tag para builds reproduzíveis. No `Gemfile`:
+A gem está publicada no RubyGems. Via Bundler, adicione ao `Gemfile`:
 
 ```ruby
-gem "fluvpay", git: "https://github.com/fluvpay/fluvpay-ruby", tag: "v1.0.0"
+gem "fluvpay"
 ```
 
 E execute:
@@ -20,11 +20,21 @@ E execute:
 bundle install
 ```
 
+Sem Bundler, instale diretamente:
+
+```bash
+gem install fluvpay
+```
+
+### Instalação a partir do código-fonte
+
+Para fixar uma versão específica pela tag em um `Gemfile`:
+
+```ruby
+gem "fluvpay", git: "https://github.com/fluvpay/fluvpay-ruby", tag: "v1.0.0"
+```
+
 Substituir `tag:` por `branch: "main"` acompanha o desenvolvimento em curso, com a ressalva de que a `main` pode mudar a qualquer momento.
-
-### RubyGems (em breve)
-
-Quando a gem for publicada no RubyGems, a instalação passará a ser `gem install fluvpay` (ou `gem "fluvpay"` no `Gemfile`). Até lá, esses comandos não resolvem.
 
 Para construir a gem a partir do código-fonte sem um `Gemfile`:
 
